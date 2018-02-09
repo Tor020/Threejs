@@ -1,0 +1,46 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Three.js Boilerplate</title>
+  <!--  Simple reset to delete the margins  -->
+  <!-- https://medium.com/@necsoft/three-js-101-hello-world-part-1-443207b1ebe1 -->
+  <!--  Three.js CDN  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r83/three.min.js"></script>
+</head>
+
+<body>
+
+  <!--  Our code  -->
+  <script src="/scripts/stats.min.js"></script>
+  <!-- 
+var stats = new Stats();
+stats.showPanel( 0 );
+document.body.appendChild( stats.dom );
+
+stats.begin();
+// ...
+stats.end();
+
+ -->
+
+  <script src="/scripts/dat.gui.js"></script>
+  <a href="http://workshop.chromeexperiments.com/examples/gui/#1--Basic-Usage"></a>
+
+  <script src="/scripts/orbitControls.js"></script>
+  <!-- var controls = new THREE.OrbitControls( camera, renderer.domElement );  /* 3d camera control */ -->
+
+  <!--  //Responsive renderer snippet  
+window.onresize = function(){
+	console.log("Window size: "+window.innerWidth+"x"+window.innerHeight+"px");
+	renderer.setSize(window.innerWidth,window.innerHeight);
+	var aspectRatio = window.innerWidth/window.innerHeight;
+	camera.aspect = aspectRatio;
+	camera.updateProjectionMatrix();
+} -->
+
+  <script src="scripts/main.js"></script>
+
+</body>
+
+</html>
